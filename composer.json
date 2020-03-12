@@ -1,0 +1,33 @@
+{
+    "name": "chondal/ayuda-dvs",
+    "description": "Renderiza la vista de tutoriales y formulario de ayuda en proyectos dvs360",
+    "authors": [
+        {
+            "name": "Jonathan",
+            "email": "jg.pradi@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Chondal\\AyudaDvs\\": "src/"
+        },
+        "files": [
+            "src/Ayuda.php"
+        ]
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chondal\\AyudaDvs\\AyudaDvsServiceProvider"
+            ],
+            "aliases": {
+                "AyudaDvs": "Chondal\\AyudaDvs\\Facades\\AyudaDvs"
+            }
+        }
+    }
+ 
+}
