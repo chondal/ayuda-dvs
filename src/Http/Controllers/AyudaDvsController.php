@@ -2,7 +2,6 @@
 
 namespace Chondal\AyudaDvs\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Chondal\AyudaDvs\Facades\AyudaDvs;
 
@@ -14,7 +13,7 @@ class AyudaDvsController extends Controller
         return view('AyudaDvs::index');
     }
 
-        /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -45,5 +44,5 @@ class AyudaDvsController extends Controller
         $groups = AyudaDvs::get('tutoriales/ver/' . $id);
         return view('AyudaDvs::tutorial', compact(['tutorial']));
     }
-    
+
 }
