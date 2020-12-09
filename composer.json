@@ -11,10 +11,7 @@
     "autoload": {
         "psr-4": {
             "Chondal\\AyudaDvs\\": "src/"
-        },
-        "files": [
-            "src/Ayuda.php"
-        ]
+        }
     },
     "require-dev": {
         "orchestra/testbench": "^4.6"
@@ -29,5 +26,4 @@
             }
         }
     }
- 
 }
